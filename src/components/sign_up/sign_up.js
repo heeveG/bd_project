@@ -33,7 +33,7 @@ class SignUp extends React.Component {
 
     onSubmit(e) {
         e.preventDefault();
-        fetch('http://django-db10.herokuapp.com/users/', {
+        fetch('https://django-db10.herokuapp.com/users/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
