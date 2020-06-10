@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export function login(state) {
 
-    return dispatch => fetch("http://django-db10.herokuapp.com/logged-user/", {
+    return dispatch => fetch("https://django-db10.herokuapp.com/logged-user/", {
         method: 'POST',
         body: JSON.stringify(state)
     }).then(resp => resp.json()).then(body => {
@@ -17,7 +17,7 @@ export function login(state) {
 
 export function signUpRequest(state) {
 
-    return dispatch => fetch("http://django-db10.herokuapp.com/logged-user/", {
+    return dispatch => fetch("https://django-db10.herokuapp.com/logged-user/", {
         method: 'GET'
     })
 }
