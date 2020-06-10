@@ -128,6 +128,9 @@ export default class Queries extends React.Component {
             data[e.name] = isNaN(e.value) ? e.value : parseInt(e.value);
         });
         console.log(data);
+          if ([...e.target.parentElement.getElementsByTagName("input")].length === 0) {
+            method = 'GET';
+        }
         let init = {
           method: method
         };
